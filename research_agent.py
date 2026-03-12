@@ -9,7 +9,7 @@ client = OpenAI(
     base_url="https://api.deepseek.com"
 )
 
-def research(task):
+def research_agent(task):
 
     response = client.chat.completions.create(
         model="deepseek-chat",
